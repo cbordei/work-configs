@@ -1,0 +1,11 @@
+#!/bin/sh
+# Get the current branch name and check if it is excluded
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+
+# Valid for branch names under the format: project-44-branch-name-or-description
+PROJECT=`git rev-parse --abbrev-ref HEAD | cut -d'-' -f1 | tr a-z A-Z`
+TICKETNO=`git rev-parse --abbrev-ref HEAD | cut -d'-' -f2 | tr a-z A-Z`
+
+if [ -n "$BRANCH_NAME" ]; then
+  sed -i.bak -e "1s/^/$(echo "[$PROJECT-$TICKETNO] ") /" $1
+fi

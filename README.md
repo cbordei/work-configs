@@ -1,3 +1,17 @@
+# Configs to live with
+
+A set of small configs I use on my workstation
+
+# Prepending ticket number to commit message
+
+```
+git config --global init.templatedir '~/.git-templates'
+mkdir -p ~/.git-templates/hooks
+mv prepare-commit-msg ~/.git-templates/hooks # or wherever you need it
+chmod a+x ~/.git-templates/hooks/prepare-commit-msg
+```
+
+
 # My zprofile
 
 ## Prerequisites
