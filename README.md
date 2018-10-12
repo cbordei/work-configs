@@ -9,6 +9,7 @@ git config --global init.templatedir '~/.git-templates'
 mkdir -p ~/.git-templates/hooks
 mv prepare-commit-msg ~/.git-templates/hooks # or wherever you need it
 chmod a+x ~/.git-templates/hooks/prepare-commit-msg
+git init
 ```
 
 
