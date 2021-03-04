@@ -45,13 +45,16 @@ brew cask install --appdir="~/Applications" iterm2
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" vagrant
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" brave-browser
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" messenger
+brew cask install --appdir="/Applications" mattermost
 brew cask install --appdir="/Applications" dropbox
 brew cask install visual-studio-code
 
@@ -60,7 +63,7 @@ brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" giphy capture
 brew cask install --appdir="/Applications" zoomus
 brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" sequel-pro
+# brew cask install --appdir="/Applications" sequel-pro
 
 
 # Remove outdated versions from the cellar.
