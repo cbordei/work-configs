@@ -49,6 +49,7 @@ brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" vagrant
 
 # Misc casks
+brew install --cask macgesture
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" brave-browser
 brew cask install --appdir="/Applications" firefox
